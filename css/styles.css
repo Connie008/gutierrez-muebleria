@@ -1,0 +1,464 @@
+/* ============================================
+   GUTIÉRREZ MUEBLERÍA - ESTILOS COMPARTIDOS
+   ============================================ */
+
+/* RESET Y CONFIGURACIÓN BASE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    color: #333333;
+    background-color: #FFFFFF;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 700;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* VARIABLES DE COLOR */
+:root {
+    --color-primario: #1976D2;
+    --color-secundario: #FF9800;
+    --color-acento: #4CAF50;
+    --color-whatsapp: #25D366;
+    --color-texto: #333333;
+    --color-texto-claro: #666666;
+    --color-fondo: #FFFFFF;
+    --color-fondo-claro: #F5F5F5;
+    --color-fondo-crema: #FFF8E1;
+    --color-error: #D32F2F;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ============================================
+   HEADER SUPERIOR
+   ============================================ */
+.header-top {
+    background-color: var(--color-fondo);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 15px 0;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 180px;
+    height: 60px;
+    background-color: var(--color-primario);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.search-bar {
+    flex: 1;
+    max-width: 600px;
+    margin: 0 30px;
+    position: relative;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 12px 15px 12px 45px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    background-color: var(--color-fondo-claro);
+    font-size: 16px;
+}
+
+.search-bar::before {
+    content: "🔍";
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.header-icons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.phone-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    color: var(--color-texto);
+}
+
+.whatsapp-btn {
+    background-color: var(--color-whatsapp);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.whatsapp-btn:hover {
+    background-color: #1ea952;
+}
+
+/* ============================================
+   NAVEGACIÓN PRINCIPAL
+   ============================================ */
+.main-nav {
+    background-color: var(--color-fondo);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    height: 60px;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    list-style: none;
+    justify-content: center;
+    gap: 40px;
+}
+
+.nav-menu li {
+    position: relative;
+}
+
+.nav-menu a {
+    color: var(--color-texto);
+    font-size: 16px;
+    transition: color 0.3s;
+    padding: 20px 0;
+}
+
+.nav-menu a:hover {
+    color: var(--color-primario);
+}
+
+.nav-menu .active {
+    color: var(--color-primario);
+    font-weight: 500;
+}
+
+.nav-menu .cta-btn {
+    background-color: var(--color-acento);
+    color: white;
+    padding: 10px 25px;
+    border-radius: 25px;
+}
+
+.nav-menu .cta-btn:hover {
+    background-color: #45a049;
+}
+
+/* ============================================
+   CONTENIDO PRINCIPAL
+   ============================================ */
+.main-content {
+    min-height: 400px;
+    padding: 60px 0;
+}
+
+.page-title {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--color-primario);
+}
+
+.section {
+    padding: 60px 0;
+}
+
+.section-title {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 60px 0 30px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column a {
+    color: #ddd;
+    transition: color 0.3s;
+}
+
+.footer-column a:hover {
+    color: white;
+}
+
+.footer-column p {
+    color: #ddd;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #555;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.social-icon:hover {
+    background-color: var(--color-primario);
+}
+
+.subfooter {
+    background-color: #212121;
+    padding: 20px 0;
+    text-align: center;
+    color: #999;
+    font-size: 14px;
+}
+
+.subfooter a {
+    color: #999;
+    margin: 0 10px;
+}
+
+/* ============================================
+   BOTONES FLOTANTES
+   ============================================ */
+.whatsapp-float {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: var(--color-whatsapp);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    z-index: 1000;
+    transition: transform 0.3s;
+    color: white;
+    font-size: 30px;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+
+/* ============================================
+   COMPONENTES REUTILIZABLES
+   ============================================ */
+
+/* Botones */
+.btn {
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+    border: none;
+    display: inline-block;
+}
+
+.btn-primary {
+    background-color: var(--color-primario);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #1565C0;
+}
+
+.btn-secondary {
+    background-color: var(--color-secundario);
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #e68900;
+}
+
+.btn-success {
+    background-color: var(--color-acento);
+    color: white;
+}
+
+.btn-success:hover {
+    background-color: #45a049;
+}
+
+/* Tarjetas */
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    transition: box-shadow 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+/* Grids */
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+/* Formularios */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: inherit;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 1199px) {
+    .grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .search-bar {
+        margin: 0;
+        max-width: 100%;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        height: auto;
+        padding: 20px 0;
+        gap: 15px;
+    }
+
+    .grid-2,
+    .grid-3,
+    .grid-4 {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+
+    .page-title {
+        font-size: 28px;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+}
